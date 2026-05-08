@@ -1,0 +1,259 @@
+/* Header.css */
+
+.header {
+  height: 60px;
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Amazon logo */
+.header img {
+  width: 100px;
+  object-fit: contain;
+  margin-top: 10px;
+  cursor: pointer;
+  
+}
+
+/* Search area */
+.header_search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 700px;
+  height: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header_search:hover {
+  outline: 2px solid #f3a847;
+}
+
+.header_input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.search_icon {
+  background-color: #febd69;
+  color: #111;
+  height: 130px;
+  width: 80px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Right nav */
+.header_nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Each option */
+.header_option {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+}
+
+.header_optionOne {
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.header_optionTwo {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Basket */
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.header_basketCount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f08804;
+}
+
+/* Hover effect */
+.header_option:hover,
+.header_optionBasket:hover,
+.header img:hover {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* =========================
+   DARK MODE HEADER STYLES
+   ========================= */
+
+body.dark .header {
+  background-color: #131921;
+  border-bottom: 1px solid #232f3e;
+}
+
+/* Amazon logo stays clean */
+body.dark .header_logo {
+  filter: brightness(0.9);
+}
+
+/* Search bar */
+body.dark .header_search {
+  background-color: #232f3e;
+  border-radius: 4px;
+}
+
+body.dark .header_input {
+  background-color: #232f3e;
+  color: white;
+  border: none;
+}
+
+body.dark .header_input::placeholder {
+  color: #ccc;
+}
+
+body.dark .search_icon {
+  color: #febd69;
+}
+
+/* Navigation text */
+body.dark .header_optionOne {
+  color: #ccc;
+}
+
+body.dark .header_optionTwo {
+  color: white;
+}
+
+/* Links */
+body.dark .header_link {
+  color: white;
+}
+
+/* Basket icon */
+body.dark .header_optionBasket {
+  color: white;
+}
+
+/* Basket count badge (if you add one later) */
+body.dark .header_basketCount {
+  color: #febd69;
+  font-weight: bold;
+}
+
+/* Hover effect like Amazon */
+body.dark .header_option:hover {
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 2px;
+}
+.header_nav_group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* DARK MODE BUTTON */
+/* DARK MODE CONTAINER */
+.header_darkMode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.header_darkMode:hover {
+  border: 1px solid white;
+}
+
+/* ICON */
+.dark_icon {
+  color: white;
+  font-size: 26px !important;
+}
+
+/* TOOLTIP */
+.dark_tooltip {
+  position: absolute;
+  bottom: -28px;
+
+  background: black;
+  color: white;
+
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(5px);
+  transition: 0.2s ease;
+
+  pointer-events: none;
+}
+
+/* SHOW TOOLTIP ON HOVER */
+.header_darkMode:hover .dark_tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header_search {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header_nav {
+    gap: 10px;
+  }
+
+  .header_optionOne {
+    font-size: 10px;
+  }
+
+  .header_optionTwo {
+    font-size: 12px;
+  }
+
+  .header img {
+    width: 80px;
+  }
+}

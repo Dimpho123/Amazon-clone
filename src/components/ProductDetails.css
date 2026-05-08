@@ -1,0 +1,35 @@
+.productDetails {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background: white;
+}
+
+.productDetails_images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productDetails_images img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.productDetails_images img:hover {
+  transform: scale(1.05);
+}
+
+.productDetails_info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.productDetails_info h2 {
+  color: #b12704;
+}

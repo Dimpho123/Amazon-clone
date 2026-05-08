@@ -1,0 +1,137 @@
+.category {
+  background-color: #eaeded;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.category_title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* PRODUCT GRID */
+.products_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* PRODUCT CARD */
+.product_card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  position: relative;
+}
+
+.product_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* PRODUCT IMAGE */
+.product_card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.product_card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0f1111;
+}
+
+/* PRICE */
+.product_card p {
+  margin: 4px 0;
+}
+
+.product_card p:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  color: #B12704;
+}
+
+/* DESCRIPTION */
+.product_description {
+  font-size: 14px;
+  color: #565959;
+  margin-top: 10px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* BUTTON */
+.product_card button {
+  margin-top: 15px;
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.product_card button:hover {
+  background: #f7ca00;
+}
+
+/* LINKS */
+.product_card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product_rating {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.product_rating svg {
+  color: #ffa41c;
+  font-size: 20px;
+}
+.filled {
+  color: #ffa41c;
+}
+
+.empty {
+  color: #ddd;
+}
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .products_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category_title {
+    font-size: 24px;
+  }
+
+  .product_card img {
+    height: 180px;
+  }
+}
