@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
-import Products from "./components/Products";
+//import Products from "./components/Products";
 import Header from "./components/layout/Header";
 import ProductDetails from "./components/ProductDetails";
 import Login from "./components/Login";
@@ -38,10 +38,12 @@ const App = () => {
   <Category />
 </Route>
 
-          {/* All products */}
+          {/* All products 
           <Route path="/products" exact>
             <Products />
-          </Route>
+          </Route>*/
+          }
+          
 
           {/* Login */}
           <Route path="/login">
