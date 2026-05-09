@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import Products from "./Products";
+//import Products from "./Products";
 
 
 
@@ -182,7 +182,7 @@ const Home = () => {
       </div>
     </div>
 
-    <a href="#">See all deals</a>
+    <Link to="/category/fashion">See all deals</Link>
   </div>
 
   {/* TECH */}
@@ -208,7 +208,7 @@ const Home = () => {
       </div>
     </div>
 
-    <a href="#">Explore Mother's Day gifts</a>
+   <Link to="/category/gaming">Explore Mother's Day gifts</Link>
   </div>
 
   {/* HOME */}
@@ -234,7 +234,7 @@ const Home = () => {
       </div>
     </div>
 
-    <a href="#">Shop home products</a>
+   <Link to="/category/home">Shop home products</Link>
   </div>
 
   {/* GIFTS */}
@@ -260,7 +260,7 @@ const Home = () => {
       </div>
     </div>
 
-    <a href="#">Shop Mother's Day gifts</a>
+    <Link to="/category/gifts">Shop Mother's Day gifts</Link>
   </div>
 
 </div>
