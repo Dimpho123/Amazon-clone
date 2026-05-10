@@ -28,12 +28,12 @@ const App = () => {
             <Checkout />
           </Route>
 
-          {/* ✅ Product Details */}
+          {/* Product Details */}
           <Route path="/product/:id">
             <ProductDetails />
           </Route>
 
-          {/* ✅ Category */}
+          {/* Category */}
           <Route path="/category/:name">
   <Category />
 </Route>

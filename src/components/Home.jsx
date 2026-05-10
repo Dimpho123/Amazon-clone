@@ -156,7 +156,7 @@ const Home = () => {
 
 
 
-{/* ✅ SECOND ROW (new Amazon-style cards UNDER) */}
+{/*  SECOND ROW  */}
 <div className="home_row_cards second_row">
 
   {/* FASHION */}

@@ -22,7 +22,7 @@ const Category = () => {
           <div key={product.id} className="product_card">
             
 
-            {/* Product Image (still clickable if you want) */}
+            {/* Product Image */}
             <Link to={`/product/${product.id}`}>
               <img src={product.image} alt={product.title} />
             </Link>

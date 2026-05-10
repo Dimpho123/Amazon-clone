@@ -29,7 +29,7 @@ const Checkout = () => {
       <p>{item.title}</p>
 
       <p className="price">
-        R {item.price}
+        $ {item.price}
       </p>
 
       {/* DELIVERY */}
@@ -90,7 +90,7 @@ const Checkout = () => {
       <div className="checkout_right">
         <h3>
           Subtotal ({state.cart.length} items):{" "}
-          <strong>R {total.toFixed(2)}</strong>
+          <strong>$ {total.toFixed(2)}</strong>
         </h3>
 
         <button className="checkout_btn">
